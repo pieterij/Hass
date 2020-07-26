@@ -3,7 +3,6 @@
 # Home Assistant frontend.
 #
 # https://www.home-assistant.io/integrations/http/
-#
 http:
   server_port: !secret http_server_port
   ssl_certificate: !secret http_ssl_certificate
