@@ -8,7 +8,7 @@ action:
   - service: switch.turn_off
     data:
       entity_id:
-      - switch.sonoff_basic_relay
+      - switch.espresso_relay
   - service: timer.cancel
     data:
       entity_id: timer.espresso
