@@ -1,0 +1,9 @@
+alias: Unlock the door
+trigger:
+  platform: state
+  entity_id: binary_sensor.people_home
+  from: 'off'
+  to: 'on'
+action:
+  service: switch.turn_off
+  entity_id: switch.garageslot

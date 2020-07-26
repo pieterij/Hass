@@ -1,0 +1,15 @@
+alias: Zonsondergang
+trigger:
+  platform: sun
+  event: sunset
+  offset: -01:00
+action:
+- service: switch.turn_on
+  data:
+    entity_id:
+    - switch.vloerlamp
+    - switch.garderobe
+- service: light.turn_on
+  data:
+    entity_id:
+    - light.eettafel_light

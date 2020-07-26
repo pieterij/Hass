@@ -1,0 +1,30 @@
+alias: Slapen
+trigger:
+  platform: time
+  at: '22:42'
+action:
+- service: light.turn_off
+  data:
+    entity_id:
+    - light.woonkamer_rechts
+- service: light.turn_off
+  data:
+    entity_id:
+    - light.woonkamer_links
+- service: switch.turn_off
+  data:
+    entity_id:
+    - switch.vloerlamp
+- service: switch.turn_off
+  data:
+    entity_id:
+    - switch.garderobe
+- service: light.turn_off
+  data:
+    entity_id: 
+    - light.eettafel_light
+
+- service: climate.set_temperature
+  data:
+   entity_id: climate.nefit_easy
+   temperature: 18

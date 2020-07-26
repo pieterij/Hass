@@ -1,0 +1,12 @@
+alias: Lock the door
+trigger:
+  platform: state
+  entity_id: binary_sensor.people_home
+  from: 'on'
+  to: 'off'
+action:
+- service: switch.turn_on
+  entity_id: switch.garageslot
+- service: notify.telebot
+  data:
+    message: Garagedeur op slot gedaan

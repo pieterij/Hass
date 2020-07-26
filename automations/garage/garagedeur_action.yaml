@@ -1,0 +1,9 @@
+alias: Garagedeur_action
+trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: 'Garagedeur'
+action:
+  service: switch.turn_on
+  entity_id: switch.virtuele_knop

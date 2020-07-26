@@ -1,0 +1,13 @@
+homeassistant:
+  name: Home
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+
+  # Load packages
+  packages: !include_dir_named integrations
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+
+proximity: !include proximity.yaml
+

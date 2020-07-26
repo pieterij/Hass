@@ -1,0 +1,15 @@
+alias: Woonkamer lamp master aan
+trigger:
+- device_id: e04cb9d11eda4d62a6ff43cf327f5d85
+  domain: light
+  entity_id: light.woonkamer_spots
+  platform: device
+  type: turned_on
+condition: []
+action:
+- service: switch.turn_on
+  entity_id: switch.vloerlamp
+- service: switch.turn_on
+  entity_id: switch.garderobe
+- service: light.turn_on
+  entity_id: light.eettafel_light  
