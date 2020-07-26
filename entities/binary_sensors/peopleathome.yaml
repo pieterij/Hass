@@ -7,5 +7,5 @@ platform: template
 sensors:
   people_home:
     value_template: >-
-      {{ is_state('device_tracker.pjotrsphone', 'home')
+      {{ is_state('device_tracker.iphone_van_pieter', 'home')
           or is_state('device_tracker.iphone_van_saskia', 'home') }}

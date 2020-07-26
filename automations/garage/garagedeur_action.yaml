@@ -1,4 +1,5 @@
-alias: Garagedeur_action
+alias: Garage_action
+id: 2aac75ee-396c-48e5-b93c-e6934b366b98
 trigger:
   - platform: event
     event_type: ios.action_fired

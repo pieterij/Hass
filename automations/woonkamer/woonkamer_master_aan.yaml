@@ -1,15 +1,18 @@
 alias: Woonkamer lamp master aan
+id: 9a70fc27-4ea1-4f1e-a8b7-81859c59716f
 trigger:
-- device_id: e04cb9d11eda4d62a6ff43cf327f5d85
+- device_id: c51fa0ef-b671-4226-8f22-bca26e170a38
   domain: light
-  entity_id: light.woonkamer_spots
+  entity_id: light.woonkamer_rechts
   platform: device
   type: turned_on
 condition: []
 action:
 - service: switch.turn_on
   entity_id: switch.vloerlamp
-- service: switch.turn_on
-  entity_id: switch.garderobe
+- service: light.turn_on
+  entity_id: light.woonkamer_links
+- service: light.turn_on
+  entity_id: light.wled32
 - service: light.turn_on
   entity_id: light.eettafel_light  

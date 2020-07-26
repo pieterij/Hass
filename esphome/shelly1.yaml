@@ -20,7 +20,7 @@ ota:
 # Device Specific Config
 output:                                
   - platform: gpio                     
-    pin: GPIO4                         
+    pin: GPIO14                       
     id: shelly_1_relay                         
                                        
 light:                                 
