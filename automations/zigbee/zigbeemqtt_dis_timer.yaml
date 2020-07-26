@@ -1,6 +1,5 @@
 id: disable_zigbee_join_timer
 alias: Disable Zigbee joining by timer
-hide_entity: true
 trigger:
 - platform: event
   event_type: timer.finished
