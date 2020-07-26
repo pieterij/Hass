@@ -6,4 +6,4 @@ trigger:
       actionName: 'Espresso'
 action:
   service: switch.toggle
-  entity_id: switch.sonoff_basic_relay
+  entity_id: switch.espresso_relay
