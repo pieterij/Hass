@@ -1,7 +1,4 @@
 homeassistant:
-  name: Home
-  unit_system: metric
-  time_zone: Europe/Amsterdam
 
   # Load packages
   packages: !include_dir_named integrations
