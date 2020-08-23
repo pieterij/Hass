@@ -1,0 +1,9 @@
+---
+#
+# 
+#
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+#
+light.0x000b57fffeeb209e_light:
+  friendly_name: Eetkamer
+  device_class: light
