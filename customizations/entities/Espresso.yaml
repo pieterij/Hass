@@ -5,7 +5,7 @@
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 #
 
-switch.sonoff_basic_relay:
+switch.espresso_relay:
   icon: 'mdi:coffee-maker'
   friendly_name: Espresso
   device_class: switch
